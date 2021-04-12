@@ -1,0 +1,28 @@
+﻿<!-- <div class="card mt-4">
+    <h4 class="card-header">You're logged in with Angular 10 + JWT & Refresh Tokens!!</h4>
+    <div class="card-body">
+        <h6>Users from secure api end point</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="users">
+            <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+        </ul>
+    </div>
+</div> -->
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav> -->
+<h2 *ngIf="authService.userValue">{{authService.userValue.firstName}}</h2>
+<h2 *ngIf="!authService.userValue">Continue to login</h2>
